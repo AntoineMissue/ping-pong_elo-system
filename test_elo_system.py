@@ -9,7 +9,10 @@ players = {
     "Noémie":Rating(1000, 1000/3),
     "Romain":Rating(1000, 1000/3),
     "Adrien":Rating(1000, 1000/3),
-    "Malik":Rating(1000, 1000/3)
+    "Malik":Rating(1000, 1000/3),
+    "Arthur":Rating(1000, 1000/3),
+    "Gaspard":Rating(1000, 1000/3),
+    "Samuel":Rating(1000, 1000/3)
 }
 
 class Player_ratings:
@@ -53,7 +56,6 @@ class Player_ratings:
     def update_ratings_2v2(self, winner_names, loser_names):
         winners = [self.get_rating(name) for name in winner_names]
         losers = [self.get_rating(name) for name in loser_names]
-        
         new_winners, new_losers = rate([winners, losers])
         
         for name, new_rating in zip(winner_names, new_winners):
@@ -104,6 +106,21 @@ player_ratings.update_ratings_2v2(["Adrien", "Noémie"], ["Antoine", "Malik"])
 player_ratings.update_ratings_2v2(["Antoine", "Noémie"], ["Adrien", "Martin"])
 player_ratings.update_ratings_2v2(["Adrien", "Noémie"], ["Alexandre", "Martin"])
 
+# Session 3
+player_ratings.update_ratings_2v2(["Antoine", "Romain"], ["Noémie", "Samuel"])
+player_ratings.update_ratings_2v2(["Arthur", "Alexandre"], ["Martin", "Gaspard"])
+player_ratings.update_ratings_2v2(["Romain", "Arthur"], ["Noémie", "Martin"])
+player_ratings.update_ratings_2v2(["Alexandre", "Samuel"], ["Antoine", "Gaspard"])
+player_ratings.update_ratings_2v2(["Antoine", "Noémie"], ["Martin", "Samuel"])
+player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Gaspard", "Arthur"])
+player_ratings.update_ratings_2v2(["Romain", "Martin"], ["Antoine", "Samuel"])
+player_ratings.update_ratings_2v2(["Alexandre", "Gaspard"], ["Arthur", "Malik"])
+player_ratings.update_ratings_2v2(["Romain", "Noémie"], ["Samuel", "Gaspard"])
+player_ratings.update_ratings_2v2(["Arthur", "Martin"], ["Alexandre", "Antoine"])
+player_ratings.update_ratings_2v2(["Alexandre", "Noémie"], ["Romain", "Samuel"])
+player_ratings.update_ratings_2v2(["Arthur", "Gaspard"], ["Martin", "Antoine"])
+player_ratings.update_ratings_2v2(["Alexandre", "Martin"], ["Noémie", "Martin"])
+player_ratings.update_ratings_2v2(["Antoine", "Noémie"], ["Arthur", "Samuel"])
 # Display ratings
 player_ratings.display_ratings()
 
