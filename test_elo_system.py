@@ -42,7 +42,7 @@ class Player_ratings:
     def display_ratings(self):
         self.cursor.execute('''SELECT name, mu, sigma FROM player_ratings ORDER BY mu DESC''')
         for row in self.cursor.fetchall():
-            print(f"{row[0]}: {row[1]:.2f}")
+            print(f"{row[0]}: {row[1]:.2f} ± {row[2]:.2f}")
             
     def update_ratings_1v1(self, winner_name, loser_name):
         winner = self.get_rating(winner_name)
@@ -121,6 +121,21 @@ player_ratings.update_ratings_2v2(["Alexandre", "Noémie"], ["Romain", "Samuel"]
 player_ratings.update_ratings_2v2(["Arthur", "Gaspard"], ["Martin", "Antoine"])
 player_ratings.update_ratings_2v2(["Alexandre", "Martin"], ["Noémie", "Martin"])
 player_ratings.update_ratings_2v2(["Antoine", "Noémie"], ["Arthur", "Samuel"])
+
+# Session 4
+player_ratings.update_ratings_1v1("Antoine", "Romain")
+player_ratings.update_ratings_2v2(["Alexandre", "Antoine"], ["Malik", "Romain"])
+player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Antoine", "Malik"])
+player_ratings.update_ratings_2v2(["Alexandre", "Malik"], ["Antoine", "Romain"])
+player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Antoine", "Malik"])
+player_ratings.update_ratings_2v2(["Alexandre", "Antoine"], ["Romain", "Malik"])
+player_ratings.update_ratings_2v2(["Antoine", "Romain"], ["Alexandre", "Malik"])
+player_ratings.update_ratings_1v1("Alexandre", "Antoine")
+player_ratings.update_ratings_1v1("Alexandre", "Romain")
+player_ratings.update_ratings_1v1("Romain", "Antoine")
+player_ratings.update_ratings_1v1("Alexandre", "Antoine")
+
+
 # Display ratings
 player_ratings.display_ratings()
 
