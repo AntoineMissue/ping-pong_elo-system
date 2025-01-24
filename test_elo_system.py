@@ -12,7 +12,8 @@ players = {
     "Malik":Rating(1000, 1000/3),
     "Arthur":Rating(1000, 1000/3),
     "Gaspard":Rating(1000, 1000/3),
-    "Samuel":Rating(1000, 1000/3)
+    "Samuel":Rating(1000, 1000/3),
+    "Gaetan":Rating(1000, 1000/3)
 }
 
 class Player_ratings:
@@ -135,7 +136,21 @@ player_ratings.update_ratings_1v1("Alexandre", "Romain")
 player_ratings.update_ratings_1v1("Romain", "Antoine")
 player_ratings.update_ratings_1v1("Alexandre", "Antoine")
 
-
+# Session 5
+player_ratings.update_ratings_1v1("Alexandre", "Gaetan")
+player_ratings.update_ratings_2v2(["Alexandre", "Antoine"], ["Gaetan", "Samuel"])
+player_ratings.update_ratings_2v2(["Gaetan", "Romain"], ["Antoine", "Samuel"])
+player_ratings.update_ratings_2v2(["Antoine", "Romain"], ["Alexandre", "Gaetan"])
+player_ratings.update_ratings_2v2(["Antoine", "Alexandre"], ["Romain", "Samuel"])
+player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Gaetan", "Samuel"])
+player_ratings.update_ratings_2v2(["Antoine", "Gaetan"], ["Alexandre", "Samuel"])
+player_ratings.update_ratings_2v2(["Antoine", "Gaetan"], ["Romain", "Samuel"])
+player_ratings.update_ratings_2v2(["Antoine", "Alexandre"], ["Romain", "Gaetan"])
+player_ratings.update_ratings_2v2(["Alexandre", "Samuel"], ["Romain", "Noémie"])
+player_ratings.update_ratings_2v2(["Antoine", "Samuel"], ["Gaetan", "Noémie"])
+player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Gaetan", "Antoine"])
+player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Antoine", "Samuel"])
+player_ratings.update_ratings_2v2(["Alexandre", "Gaetan"], ["Romain", "Samuel"])
 # Display ratings
 player_ratings.display_ratings()
 
