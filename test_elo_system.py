@@ -13,7 +13,8 @@ players = {
     "Arthur":Rating(1000, 1000/3),
     "Gaspard":Rating(1000, 1000/3),
     "Samuel":Rating(1000, 1000/3),
-    "Gaetan":Rating(1000, 1000/3)
+    "Gaetan":Rating(1000, 1000/3),
+    "Rodolphe":Rating(1000, 1000/3),
 }
 
 class Player_ratings:
@@ -120,7 +121,7 @@ player_ratings.update_ratings_2v2(["Romain", "Noémie"], ["Samuel", "Gaspard"])
 player_ratings.update_ratings_2v2(["Arthur", "Martin"], ["Alexandre", "Antoine"])
 player_ratings.update_ratings_2v2(["Alexandre", "Noémie"], ["Romain", "Samuel"])
 player_ratings.update_ratings_2v2(["Arthur", "Gaspard"], ["Martin", "Antoine"])
-player_ratings.update_ratings_2v2(["Alexandre", "Martin"], ["Noémie", "Martin"])
+player_ratings.update_ratings_2v2(["Alexandre", "Martin"], ["Noémie", "Romain"])
 player_ratings.update_ratings_2v2(["Antoine", "Noémie"], ["Arthur", "Samuel"])
 
 # Session 4
@@ -151,6 +152,39 @@ player_ratings.update_ratings_2v2(["Antoine", "Samuel"], ["Gaetan", "Noémie"])
 player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Gaetan", "Antoine"])
 player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Antoine", "Samuel"])
 player_ratings.update_ratings_2v2(["Alexandre", "Gaetan"], ["Romain", "Samuel"])
+
+# Session 6
+player_ratings.update_ratings_1v1("Alexandre", "Martin")
+player_ratings.update_ratings_1v1("Antoine", "Rodolphe")
+player_ratings.update_ratings_2v2(["Antoine", "Alexandre"], ["Samuel", "Martin"])
+player_ratings.update_ratings_2v2(["Antoine", "Martin"], ["Romain", "Samuel"])
+player_ratings.update_ratings_2v2(["Alexandre", "Samuel"], ["Romain", "Martin"])
+player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Antoine", "Samuel"])
+player_ratings.update_ratings_2v2(["Alexandre", "Samuel"], ["Antoine", "Romain"])
+player_ratings.update_ratings_2v2(["Alexandre", "Antoine"], ["Samuel", "Romain"])
+player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Antoine", "Samuel"])
+player_ratings.update_ratings_2v2(["Alexandre", "Samuel"], ["Romain", "Antoine"])
+player_ratings.update_ratings_2v2(["Alexandre", "Antoine"], ["Romain", "Samuel"])
+player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Antoine", "Samuel"])
+player_ratings.update_ratings_2v2(["Alexandre", "Samuel"], ["Antoine", "Romain"])
+player_ratings.update_ratings_2v2(["Alexandre", "Antoine"], ["Romain", "Samuel"])
+
+# Session 7
+player_ratings.update_ratings_2v2(["Alexandre", "Gaetan"], ["Samuel", "Martin"])
+player_ratings.update_ratings_2v2(["Arthur", "Samuel"], ["Romain", "Antoine"])
+player_ratings.update_ratings_2v2(["Alexandre", "Antoine"], ["Arthur", "Gaetan"])
+player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Gaetan", "Samuel"])
+player_ratings.update_ratings_2v2(["Romain", "Arthur"], ["Antoine", "Samuel"])
+player_ratings.update_ratings_2v2(["Arthur", "Alexandre"], ["Antoine", "Gaetan"])
+player_ratings.update_ratings_2v2(["Alexandre", "Samuel"], ["Antoine", "Romain"])
+player_ratings.update_ratings_2v2(["Gaetan", "Martin"], ["Arthur", "Samuel"])
+player_ratings.update_ratings_2v2(["Alexandre", "Romain"], ["Arthur", "Martin"])
+player_ratings.update_ratings_2v2(["Alexandre", "Gaetan"], ["Antoine", "Samuel"])
+player_ratings.update_ratings_2v2(["Arthur", "Martin"], ["Alexandre", "Romain"])
+player_ratings.update_ratings_2v2(["Antoine", "Gaetan"], ["Alexandre", "Samuel"])
+player_ratings.update_ratings_2v2(["Alexandre", "Martin"], ["Romain", "Arthur"])
+player_ratings.update_ratings_2v2(["Antoine", "Gaetan"], ["Romain", "Samuel"])
+player_ratings.update_ratings_2v2(["Alexandre", "Martin"], ["Gaetan", "Arthur"])
 # Display ratings
 player_ratings.display_ratings()
 
