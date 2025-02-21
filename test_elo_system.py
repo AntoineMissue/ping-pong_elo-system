@@ -185,6 +185,39 @@ player_ratings.update_ratings_2v2(["Antoine", "Gaetan"], ["Alexandre", "Samuel"]
 player_ratings.update_ratings_2v2(["Alexandre", "Martin"], ["Romain", "Arthur"])
 player_ratings.update_ratings_2v2(["Antoine", "Gaetan"], ["Romain", "Samuel"])
 player_ratings.update_ratings_2v2(["Alexandre", "Martin"], ["Gaetan", "Arthur"])
+
+# Session 8
+player_ratings.update_ratings_1v1("Antoine", "Samuel")
+player_ratings.update_ratings_1v1("Arthur", "Antoine")
+player_ratings.update_ratings_1v1("Arthur", "Samuel")
+player_ratings.update_ratings_2v2(["Antoine", "Martin"], ["Arthur", "Samuel"])
+player_ratings.update_ratings_2v2(["Antoine", "Samuel"], ["Gaetan", "Martin"])
+player_ratings.update_ratings_2v2(["Gaetan", "Arthur"], ["Samuel", "Martin"])
+player_ratings.update_ratings_2v2(["Arthur", "Martin"], ["Antoine", "Gaetan"])
+player_ratings.update_ratings_2v2(["Antoine", "Arthur"], ["Gaetan", "Samuel"])
+player_ratings.update_ratings_2v2(["Arthur", "Martin"], ["Samuel", "Antoine"])
+player_ratings.update_ratings_2v2(["Antoine", "Gaetan"], ["Samuel", "Martin"])
+player_ratings.update_ratings_2v2(["Gaetan", "Samuel"], ["Arthur", "Martin"])
+
+# Session 9
+player_ratings.update_ratings_2v2(["Adrien", "Martin"], ["Antoine", "Gaetan"])
+player_ratings.update_ratings_2v2(["Adrien", "Antoine"], ["Martin", "Romain"])
+player_ratings.update_ratings_2v2(["Gaetan", "Martin"], ["Adrien", "Romain"])
+player_ratings.update_ratings_2v2(["Adrien", "Gaetan"], ["Antoine", "Romain"])
+player_ratings.update_ratings_2v2(["Romain", "Gaetan"], ["Martin", "Antoine"])
+player_ratings.update_ratings_2v2(["Adrien", "Antoine"], ["Martin", "Gaetan"])
+player_ratings.update_ratings_2v2(["Adrien", "Martin"], ["Antoine", "Romain"])
+player_ratings.update_ratings_2v2(["Adrien", "Gaetan"], ["Romain", "Martin"])
+player_ratings.update_ratings_2v2(["Adrien", "Romain"], ["Antoine", "Gaetan"])
+player_ratings.update_ratings_2v2(["Gaetan", "Martin"], ["Antoine", "Romain"])
+player_ratings.update_ratings_2v2(["Adrien", "Gaetan"], ["Antoine", "Martin"])
+player_ratings.update_ratings_2v2(["Romain", "Adrien"], ["Antoine", "Martin"])
+player_ratings.update_ratings_2v2(["Adrien", "Martin"], ["Romain", "Gaetan"])
+player_ratings.update_ratings_2v2(["Antoine", "Samuel"], ["Noémie", "Romain"])
+player_ratings.update_ratings_2v2(["Antoine", "Noémie"], ["Romain", "Samuel"])
+player_ratings.update_ratings_2v2(["Antoine", "Romain"], ["Samuel", "Noémie"])
+
+
 # Display ratings
 player_ratings.display_ratings()
 
